@@ -75,11 +75,15 @@ library(here)
 ### Load file
 ```{r}
 #Convert file to csv
-load(here("arch241simple.rda"))   # Notice file path works on an computer
-
+load(here("arch241simple.rda"))   # Notice file path works on any computer
 attach(arch241a2)
 
-save(arch241a2, file= here("example_data.csv"))
+write_csv(arch241a2, here("example_data.csv"))
+
+#save(arch241a2, file= here("example_data.csv"))
+
+read_csv(here("example_data.csv"))
+# Manually removed several characters with encoding issue from first line of file and resaved to csv: `\037\u008b\b`
 ```
 
 ### summary
