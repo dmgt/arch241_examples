@@ -1,7 +1,7 @@
 ---
-title: "Arch 241 example"
+title: "Arch 241 examples"
 author: "Dana"
-date: "August 18, 2018"
+date: "September 27, 2018"
 output: html_document
 ---
 # Introduction
